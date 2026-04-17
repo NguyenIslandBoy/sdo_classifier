@@ -10,7 +10,7 @@ Binary solar flare risk classification from NASA Solar Dynamics Observatory AIA 
 
 | Split | Macro F1 | Accuracy | Quiet F1 | Active F1 |
 |---|---|---|---|---|
-| Validation | 0.729 | — | — | — |
+| Validation | 0.744 | — | — | — |
 | Test | 0.69 | 0.70 | 0.66 | 0.73 |
 
 Trained on SDOBenchmark full dataset (8,316 samples). Binary classification: **quiet** (no significant flare expected) vs **active** (elevated flare risk).
@@ -68,8 +68,6 @@ Two-phase fine-tuning strategy:
 **Loss:** Weighted cross-entropy correcting for class imbalance (quiet: 0.63, active: 1.64).
 
 **Checkpoint criterion:** Best validation macro F1 (not val loss) — F1 is robust to the high variance in val loss caused by the small validation set (n=1,663).
-
-![Training curves](assets/training_history.png)
 
 ---
 
