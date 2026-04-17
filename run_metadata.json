@@ -1,0 +1,19 @@
+{
+  "model": "EfficientNetB3",
+  "dataset": "SDOBenchmark (example subset)",
+  "train_samples": 333,
+  "val_samples": 83,
+  "test_samples": 45,
+  "task": "binary classification (quiet vs active)",
+  "best_val_f1": 0.7426,
+  "test_macro_f1": 0.69,
+  "test_accuracy": 0.69,
+  "phase1_epochs": 5,
+  "phase2_epochs": 10,
+  "phase1_lr": 0.001,
+  "phase2_lr": 0.0001,
+  "batch_size": 16,
+  "dropout": 0.3,
+  "checkpoint": "best_model.pt",
+  "note": "Trained on example subset only. Full dataset (8336 samples) expected to improve F1 significantly."
+}

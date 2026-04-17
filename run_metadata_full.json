@@ -1,0 +1,18 @@
+{
+  "model": "EfficientNetB3",
+  "dataset": "SDOBenchmark (full)",
+  "train_samples": 6653,
+  "val_samples": 1663,
+  "test_samples": 883,
+  "task": "binary classification (quiet vs active)",
+  "best_val_f1": 0.746,
+  "test_macro_f1": 0.69,
+  "test_accuracy": 0.7,
+  "phase1_epochs": 5,
+  "phase2_epochs": 20,
+  "phase1_lr": 0.001,
+  "phase2_lr": 0.0001,
+  "batch_size": 32,
+  "dropout": 0.3,
+  "checkpoint": "best_model_full_binary.pt"
+}
